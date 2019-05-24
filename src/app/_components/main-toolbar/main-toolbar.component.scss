@@ -1,0 +1,40 @@
+@import 'variables';
+
+.main-toolbar {
+  .app-toolbar {
+    background-color: $red-500;
+    box-shadow: $app-toolbar-shadow;
+    color: $white-color;
+    position: sticky;
+    top: 0;
+    z-index: $app-toolbar-z-index;
+
+    .toolbar-title {
+      cursor: pointer;
+      margin-left: 16px;
+    }
+
+    .spacer {
+      flex: 1 1 auto;
+    }
+
+    .dropdown-form-field {
+      font-size: 14px;
+      position: absolute;
+      right: 20px;
+      top: 50px;
+      width: 30px;
+      z-index: 55;
+
+      ::ng-deep {
+        .mat-select-arrow {
+          display: none;
+        }
+
+        .mat-form-field-underline {
+          height: 0;
+        }
+      }
+    }
+  }
+}

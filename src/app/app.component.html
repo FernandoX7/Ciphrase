@@ -1,0 +1,26 @@
+<mat-sidenav-container class="app-component">
+  <mat-sidenav #sideMenu
+               [mode]="'over'">
+    <mat-list *ngFor="let item of fakeSideMenuItems"
+              class="side-menu-list"
+              role="list">
+      <mat-list-item role="listitem"
+                     class="side-menu-list-item">
+        <mat-icon>
+          {{item.icon}}
+        </mat-icon>
+        <div class="item-label">
+          {{item.name}}
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="app-content-container">
+    <app-main-toolbar></app-main-toolbar>
+    <mat-progress-bar mode="indeterminate"
+                      *ngIf="isRouteLoading">
+    </mat-progress-bar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

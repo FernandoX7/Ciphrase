@@ -1,0 +1,15 @@
+@import 'variables';
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - #{$app-toolbar-height});
+
+  .home-page-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+}

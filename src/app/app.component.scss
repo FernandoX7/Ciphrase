@@ -1,0 +1,26 @@
+@import 'variables';
+
+.app-component {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+
+  .side-menu-list {
+    .side-menu-list-item {
+      width: 300px;
+
+      .item-label {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .app-content-container {
+    height: 100%;
+  }
+}
